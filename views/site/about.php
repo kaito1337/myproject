@@ -18,33 +18,4 @@ $this->params['breadcrumbs'][] = $this->title;
 менеджера по продажам позволяет подобрать наиболее эффективное решение
 и обеспечить достойный сервис, отвечающий всем пожеланиям.
     </p>
-<p>
-    <h2 id="deviz">Пока принтер печатает — вы отдыхаете!  </h2>
-</p>
 </div>
-<h3 id="newcom">Новинки компании </h3>
-<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
-  </ol>
-  <div class="carousel-inner">
-<?php foreach($rows as $key => $row): ?>
-<?php $active= !$key ? "active" : ""?> 
-    <div class="carousel-item <?=$active ?>"  >
-    <h5 class="title-item"> <?= $row['title']?></h5>
-        <?= Html::img("@web/img/{$row['image']}", ['class' => 'd-block w-100 img-item', 'alt' => 'Картинка продукта']) ?>
-    </div>
-    <? endforeach ?>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Предыдущий</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Следующий</span>
-  </a>

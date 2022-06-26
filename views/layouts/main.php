@@ -56,7 +56,7 @@ AppAsset::register($this);
                 ),
             (
                 !Yii::$app->user->isGuest && !Yii::$app->user->identity->isAdmin ?
-                ['label' => 'Корзина', 'url' => ['/cart']]
+                ['label' => 'Избранное', 'url' => ['/cart']]
                 : ''
             ),
         ],
