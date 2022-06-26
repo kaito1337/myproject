@@ -1,0 +1,16 @@
+.img-item{
+    max-width: 576px;
+    margin: 0 auto;
+    display:block;
+}
+.title-item{
+    text-align:center;
+    color:black;
+}
+#newcom{
+    text-align:center;
+}
+#deviz{
+    text-align:center;
+    size: 14px;
+}

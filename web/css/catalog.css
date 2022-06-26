@@ -1,0 +1,21 @@
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.item{
+    margin-bottom: 30px;
+}
+.card-img{
+    height: 25vh;
+    width: 100%;
+}
+.card-image{
+    height: 25%;
+    width: 25%;
+}
+.n-flex{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
