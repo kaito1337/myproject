@@ -40,7 +40,7 @@ $this->params['breadcrumbs'][] = $this->title;
     . "<p class=\"card-text\">Цена: {$model->price} рублей</p>"
     . "</div>"
     . ( !Yii::$app->user->isGuest && !Yii::$app->user->identity->isAdmin ?
-    Html::a('В корзину', ['cart/add','id' => $model->id], ['class' => "btn btn-success"]) : '')
+    Html::a('В избранное', ['cart/add','id' => $model->id], ['class' => "btn btn-success"]) : '')
     . "</div>";
             return $card;
         },
