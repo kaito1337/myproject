@@ -23,10 +23,6 @@ $this->params['breadcrumbs'][] = $this->title;
         'id' => 'pjaxcatalog',
     ]); 
     ?>
-    <?php echo $this->render('_search', ['model' => $searchModel,
-        'categories' => $categories, 'dataProvider' => $dataProvider,
-    ]); 
-    ?>
 
     <?= ListView::widget([
         'dataProvider' => $dataProvider,
@@ -35,11 +31,11 @@ $this->params['breadcrumbs'][] = $this->title;
         'pager' => ['class' => \yii\bootstrap4\LinkPager::class],
         'itemView' => function ($model, $key, $index, $widget) {
             $card = "<div class=\"card\" style=\"width: 18rem;\">"
-        . Html::a(Html::img("@web/img/{$model->image}", ['class' => "card-img", 'alt' => "Картинка к карточке"]), ['view','id' => $model->id])
+        .Html::img("@web/img/{$model->image}", ['class' => "card-img", 'alt' => "Картинка к карточке"])
     . "<div class=\"card-body\">"
     . "<h5 class=\"card-title\">"
 
-    . Html::a(Html::encode($model->title),['view','id' => $model->id])
+    .Html::encode($model->title)
     . "</h5>"
     . "<p class=\"card-text\">Цена: {$model->price} рублей</p>"
     . "</div>"

@@ -41,7 +41,6 @@ AppAsset::register($this);
             ['label' => 'О нас', 'url' => ['/site/about']],
             ['label' => 'Где нас найти?', 'url' => ['/site/location']],
             Yii::$app->user->isGuest ? ['label' => 'Регистрация', 'url' => ['/site/register']] : '',
-            Yii::$app->user->identity->isAdmin ? ['label' => 'Панель управления', 'url' => ['/admin']]: '',
             Yii::$app->user->isGuest ? (
                 ['label' => 'Войти', 'url' => ['/site/login']]
             ) : (
