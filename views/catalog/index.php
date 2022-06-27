@@ -38,6 +38,7 @@ $this->params['breadcrumbs'][] = $this->title;
     .Html::encode($model->title)
     . "</h5>"
     . "<p class=\"card-text\">Цена: {$model->price} рублей</p>"
+    . "<p class=\"card-text\">Модель: {$model->model}</p>"
     . "</div>"
     . ( !Yii::$app->user->isGuest && !Yii::$app->user->identity->isAdmin ?
     Html::a('В избранное', ['cart/add','id' => $model->id], ['class' => "btn btn-success"]) : '')

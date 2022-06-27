@@ -79,11 +79,7 @@ class Product extends \yii\db\ActiveRecord
      *
      * @return \yii\db\ActiveQuery
      */
-    public function getOrderItems()
-    {
-        return $this->hasMany(OrderItem::className(), ['id_product' => 'id']);
-    }
-
+    
    public static function getImages()
     {
         return (new \yii\db\Query())
